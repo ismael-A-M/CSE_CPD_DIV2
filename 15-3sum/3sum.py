@@ -18,8 +18,6 @@ class Solution:
                     res.append([arr[i], arr[left], arr[right]])
                     left += 1
                     right -= 1
-
-                    # skip duplicates (IMPORTANT FIX)
                     while left < right and arr[left] == arr[left - 1]:
                         left += 1
                     while left < right and arr[right] == arr[right + 1]:
